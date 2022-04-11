@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism Card Hover Effects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/Glassmorphism Card Hover Effects/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imaBx">
+              <img
+                src="/Glassmorphism Card Hover Effects/images/human1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="contentBx">
+              <h3>First Person<br /><span>Creative Designer</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i: 1">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li style="--i: 2">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li style="--i: 3">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="imaBx">
+              <img
+                src="/Glassmorphism Card Hover Effects/images/human9.jpg"
+                alt=""
+              />
+            </div>
+            <div class="contentBx">
+              <h3>Second Person<br /><span>UI Architect</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i: 1">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li style="--i: 2">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li style="--i: 3">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="imaBx">
+              <img
+                src="/Glassmorphism Card Hover Effects/images/human8.jpg"
+                alt=""
+              />
+            </div>
+            <div class="contentBx">
+              <h3>Third Person<br /><span>Web Developer</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i: 1">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li style="--i: 2">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li style="--i: 3">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+  </body>
+</html>
