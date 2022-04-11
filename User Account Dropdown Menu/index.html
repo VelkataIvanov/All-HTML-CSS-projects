@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Account Dropdown Menu</title>
+    <link rel="stylesheet" href="/User Account Dropdown Menu/style.css" />
+  </head>
+  <body>
+    <div class="action">
+      <div class="profile" onclick="menuToggle();">
+        <img src="/Velkata/images/aboutme2.jpg" alt="" />
+      </div>
+      <div class="menu">
+        <h3>Veliko Ivanov<br /><span>Website Designer</span></h3>
+        <ul>
+          <li>
+            <img src="/User Account Dropdown Menu/images/user.png" alt="" />
+            <a href="#">My Profile</a>
+          </li>
+          <li>
+            <img src="/User Account Dropdown Menu/images/pencil.png" alt="" />
+            <a href="#">Edit Profile</a>
+          </li>
+          <li>
+            <img src="/User Account Dropdown Menu/images/inbox.png" alt="" />
+            <a href="#">Inbox</a>
+          </li>
+          <li>
+            <img src="/User Account Dropdown Menu/images/settings.png" alt="" />
+            <a href="#">Settings</a>
+          </li>
+          <li>
+            <img
+              src="/User Account Dropdown Menu/images/help-web-button.png"
+              alt=""
+            />
+            <a href="#">Help</a>
+          </li>
+          <li>
+            <img src="/User Account Dropdown Menu/images/logout.png" alt="" />
+            <a href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function menuToggle() {
+        const toggleMenu = document.querySelector(".menu");
+        toggleMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
