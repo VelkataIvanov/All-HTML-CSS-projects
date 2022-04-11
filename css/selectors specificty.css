@@ -1,0 +1,17 @@
+h1 {
+  color: dodgerblue;
+}
+
+.hightlight {
+  color: deeppink;
+}
+
+#products {
+  color: green;
+}
+
+.hightlight#products {
+  color: dodgerblue;
+}
+
+/* три възможности с нарастващ приоритет (0,0,0) */

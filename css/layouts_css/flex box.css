@@ -1,0 +1,35 @@
+.container {
+  border: 3px solid lightgray;
+  display: flex;
+  /* flex-direction: column-reverse; column,row-reverse, row is by default */
+  /* justify-content: ; (along the main axis)
+    align-items: ; (along the cross axis) */
+  flex-direction: row;
+  justify-content: center;
+  /* justify-content: space-around, space-between, space-evenly, flex-end */
+  /* align-items: flex-end; */
+  align-items: center;
+  /* align-content: center;
+  flex-wrap: wrap;  -  those two rows are valid when want to have inline elements in block element, when comment elements are uncomment in thml file*/
+  height: 30vh;
+}
+
+.box {
+  flex-basis: 5rem;
+  flex-grow: 1;
+  width: 5rem;
+  height: 5rem;
+  background: gold;
+  margin: 1rem;
+  /* flex-shrink: 1;
+  flex: 1 1 15rem;
+  flex-grow and shrink can use only  digits, witout rem, px, vh, vw
+  flex: is for 1 for grow, second 1 for shrink, 15rem for basis*/
+}
+
+.box-one {
+  /* overide align-item elements */
+  /* align-self: flex-start; */
+  flex-basis: 10rem;
+  flex-grow: 0;
+}

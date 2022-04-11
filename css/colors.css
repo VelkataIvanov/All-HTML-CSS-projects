@@ -1,0 +1,8 @@
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: rgba(52, 173, 50, 0.7);
+  /* first example is for rgb color system, the last "a" is for transperacy;
+    #ebe2a0 - is for HEX color system, here doesn't be use "a";
+    hlsa(53,65%,77%) is for HSL color system, "a" is usable*/
+}

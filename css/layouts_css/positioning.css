@@ -1,0 +1,26 @@
+.boxes {
+  border: 3px solid lightgrey;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+/* with absolute positioning we can position an element relative to the parent/container/ */
+/* relative positioning - when we want to position the element of his normal position, to move it */
+/* fixed - positioning relative to the view port which is the visible area of the browser */
+.box-one {
+  background: gold;
+}
+
+.box-two {
+  background: lime;
+  position: relative;
+  left: 4rem;
+  bottom: 3rem;
+  z-index: -1;
+}
+
+.box-three {
+  background: maroon;
+}

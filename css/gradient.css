@@ -1,0 +1,6 @@
+.box {
+  width: 600px;
+  height: 200px;
+  /* background: linear-gradient(to bottom right, dodgerblue, yellow, tomato 46%); */
+  background: radial-gradient(circle at top left, white, yellow);
+}

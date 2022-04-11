@@ -1,0 +1,8 @@
+.box {
+  border: 3px solid gold;
+  width: 150px;
+  height: 150px;
+  overflow: auto; /* possible choises - visible is default, hidden - to hide overfloded information, scroll - shows two scroll bars(vertical and horizontal) */
+  /* overflow-y: auto;
+  overflow-x: hidden; - two additional properties for vertical or horizontal overflows*/
+}

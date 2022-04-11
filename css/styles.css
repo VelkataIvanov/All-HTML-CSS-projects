@@ -1,0 +1,12 @@
+body {
+  margin: 10px;
+}
+
+#products + p {
+  color: orange;
+}
+
+/* relation selectors can be several types;
+as ex: #products > p - direct chiled of the <p> section 
+       #products + p - direct sibeling of the <section> element
+       #products ~ p - all elements that are general siblings of the product section */

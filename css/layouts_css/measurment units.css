@@ -1,0 +1,20 @@
+html {
+  /* 62.5% of 16px = 10px*/
+  font-size: 62.5%;
+}
+
+body {
+  /* margin: 10px; */
+  /* width: 300px; */
+}
+
+.box {
+  width: 15rem; /* 10 x font size of the root element, by default is 16px */
+  /* width: 10em; 10 x size of the current element - this is a font size propertie */
+  height: 100vh;
+  /* 50% of the widht of the parent element  */
+  /* width: 50vw; view port width - this means 50% the widht of the view port
+  height: 100vh; view port hight - this means 100% the hight of the view port */
+  background-color: gold;
+  border-top: 3px solid orange;
+}

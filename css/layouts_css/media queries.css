@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /* this is a mobile approach */
+}
+
+.box {
+  background: gold;
+  padding: 1rem;
+}
+
+.box:nth-of-type(2) {
+  background: dodgerblue;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    background: green;
+  }
+}

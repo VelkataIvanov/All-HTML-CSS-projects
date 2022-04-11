@@ -1,0 +1,27 @@
+body {
+  margin: 10px;
+}
+
+.tweet {
+  border: 3px solid lightgray;
+}
+/* this is useful when our floating colapse, as an example if we remove the one of the <p> elements
+- maith be use also for clear issues, when create second class, as example when we have advertisement*/
+
+.clearfix::after {
+  content: "";
+  display: block; /* to convert it to block element, because is inline element */
+  clear: both;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.clear {
+  clear: both;
+}

@@ -1,0 +1,13 @@
+.box {
+  width: 600px;
+  height: 200px;
+  background: dodgerblue;
+  border: 10px solid royalblue;
+  /* can be used also and  dashed, dotted */
+  border-top: 20px dotted salmon;
+  border-left: 7px dashed greenyellow;
+  /*border-width: 10px 20px 10px 20px;*/
+  /*border-style: ;*/
+  /*border-color: ;*/
+  border-radius: 50px;
+}

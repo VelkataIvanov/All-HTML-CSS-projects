@@ -1,0 +1,35 @@
+body {
+  margin: 10px;
+}
+
+article p:first-of-type {
+  font-size: 140%;
+  font-style: italic;
+}
+
+article p:last-of-type {
+  font-weight: bold;
+}
+
+/* :first-child is a selector that select the first element of the site!
+ :first-of-type  is a selector that select the first element of the each paragraph
+ p:first-of-type - specified that only the first <p> will be selected
+ p:last-of-type /last-child/- specified that only the last <p> will be selected*/
+
+ul li:nth-child(3n) {
+  color: deeppink;
+}
+
+/* odd - only odd number - нечетни числа
+   even - четни числа
+   3n - every third item it the list */
+
+a:visited,
+a:link {
+  color: darkolivegreen;
+}
+
+a:hover,
+a:focus {
+  color: deeppink;
+}

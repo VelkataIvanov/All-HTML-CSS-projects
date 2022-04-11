@@ -1,0 +1,10 @@
+p {
+  /* padding: 10px 20px; /* vertical - horizontal - short version on 10 20 10 20 - top - right- bottom - left */
+  /*border: 5px solid gold; */
+  /* padding: 20px;
+  margin: 0; */
+  /* or */
+  margin: 20px;
+  padding: 0;
+  /* this is margin collapsing - ако имаме два <p> един под друг им прави един маргин общ - top&buttom */
+}

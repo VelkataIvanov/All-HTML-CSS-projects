@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 10px;
+}
+.box::before {
+  content: "Hello";
+  /* in this case if is wroten the psuedo element shouden't worked with the universe element '*',
+   to work must be extended the universe element like this *, *::before,*::after  */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  /* padding: 20px;
+  border: 10px solid orange; */
+  /* box-sizing: content-box; OR border-box - which is equal to width: 100px; /  height: 100px; */
+  display: inline-block; /* display is used only for span or inline proparties, inline is by default for span, block is by default for divs,
+  inline-block is a combination can use width and height and not inserted at the new line */
+}
