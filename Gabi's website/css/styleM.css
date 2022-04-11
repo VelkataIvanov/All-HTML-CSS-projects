@@ -1,0 +1,349 @@
+:root {
+  --color-primary: #75c9b7;
+  --color-secondary: #abd699;
+  --color-accent: #ffe26a;
+  --color-headings: #16123f;
+  --color-body: #c7ddcc;
+}
+/* Typography */
+
+/* html {
+  62.5% of 16px = 10px
+  font-size: 62.5%;
+} */
+/* .ordy {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 7rem;
+  font-family: "Fuzzy Bubbles", cursive;
+  font-weight: 700;
+} */
+.containertop {
+  /* border: 3px solid lightgray; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-primary);
+  font-family: "Comfortaa", cursive;
+  color: var(--color-headings);
+  margin: 1rem;
+}
+h1,
+h2,
+h3 {
+  color: whitesmoke;
+}
+h1 {
+  font-size: 6rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+  text-align: center;
+}
+/* Buttons */
+.btn {
+  /* max-width: 8vw; */
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  /* font-size: 0.7rem; */
+  font-weight: 700;
+  margin: 1rem 0;
+  padding: 0.5vw 2vh;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/* 
+.btn {
+  border-radius: 40px;
+  display: block;
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.5rem;
+} */
+
+/* Cards */
+/* .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  height: 80vh;
+  overflow: scroll;
+}
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 10px 10px #f3f3f3;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 0.75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  flex-basis: 33.333%;
+  flex-grow: 0;
+  font-size: 1rem;
+  width: 20rem;
+} */
+/* Grid */
+
+.row {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* border: 3px solid deeppink; */
+  border-radius: 10px;
+}
+.card {
+  /*float: left;*/
+  /* max-width: 33vw; */
+  padding: 0.75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  flex-basis: 30%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.card__body {
+  border-bottom: 0px;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 0px 5px 3px #f3f3f3;
+
+  /* width: auto; */
+}
+.card__header {
+  max-width: 33vw;
+  border-bottom: 0px;
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: var(--color-accent);
+  border-radius: 7px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 0 0px 5px 3px #f3f3f3;
+
+  /* width: auto; */
+}
+.card--primary .card__header {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.card--secondary .card__header {
+  background-color: var(--color-accent);
+  color: #fff;
+  box-shadow: 0 5px 5px 5px #f3f3f3;
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick .list__item {
+  /* padding-left: 0.5rem; */
+  margin-bottom: 1rem;
+}
+
+/* @media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+} */
+/* Navigation Bar */
+.nav {
+  background: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav__list {
+  width: auto;
+  display: flex;
+  font-size: 1.2rem;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.nav__item {
+  border: 0;
+  padding: 0.5rem 2rem;
+  /* border-bottom: 1px solid #222; */
+  list-style-type: none;
+}
+
+.nav__item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  /* color: #fff; */
+  color: var(--color-accent);
+}
+/* Icons */
+.icon {
+  /* width: 35rem;
+  height: 7rem; */
+  width: auto;
+  height: auto;
+}
+
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
+}
+
+.icon-container {
+  background: #f3f9fa;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
+}
+/* Image */
+/* * {
+  box-sizing: border-box;
+} */
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+img {
+  border-radius: 20px;
+}
+
+/* Avatar  */
+.avatar {
+  vertical-align: left;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+/* nicknames  style*/
+.w3-green,
+.w3-hover-green:hover {
+  color: #fff !important;
+  background-color: #4caf50 !important;
+}
+.w3-blue,
+.w3-hover-blue:hover {
+  color: #fff !important;
+  background-color: #2196f3 !important;
+}
+.w3-section,
+.w3-code {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+.w3-container,
+.w3-panel {
+  padding: 0.01em 16px;
+  border-radius: 5rem;
+}
+.p__nicknames {
+  font-style: italic;
+}
+/* photogallery */
+.photorow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that sits next to each other */
+.photocolumn {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.photocolumn .photoimg {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .photocolumn {
+    flex: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .photocolumn {
+    flex: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
