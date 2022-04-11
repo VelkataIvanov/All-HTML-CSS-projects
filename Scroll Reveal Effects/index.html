@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Reveal Website Effects</title>
+    <link rel="stylesheet" href="/Scroll Reveal Effects/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <section class="section-01">
+      <div class="container">
+        <h2 class="main-title">Reveal Elements On Scroll</h2>
+        <div class="content">
+          <div class="image">
+            <img
+              src="/Scroll Reveal Effects/images/image3.jpg"
+              alt="First Image"
+            />
+          </div>
+          <div class="text-box">
+            <h3>First Section</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+              facilis corrupti dolor, repudiandae reprehenderit a nobis
+              repellendus autem recusandae. Vero, nesciunt incidunt voluptates
+              repellendus, cupiditate excepturi dicta sit numquam vitae ut quos?
+              Dignissimos veniam odit maiores officiis illo cupiditate
+              accusantium?
+            </p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="section-02">
+      <div class="container">
+        <h3 class="section-title">Second Section</h3>
+        <div class="content">
+          <div class="image">
+            <img
+              src="/Scroll Reveal Effects/images/image2.jpg"
+              alt="Second image"
+            />
+          </div>
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              ratione asperiores ad nemo excepturi expedita dolor earum.
+              Asperiores at omnis laborum perspiciatis unde totam incidunt
+              sapiente ex facere eaque rerum alias nobis accusantium quos vel
+              fugit eos impedit, maxime repellat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-03">
+      <div class="container">
+        <h3 class="section-title">Third Section</h3>
+        <div class="content">
+          <div class="media-info">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </li>
+          </div>
+          <div class="image">
+            <img
+              src="/Scroll Reveal Effects/images/image1.jpg"
+              alt="Third image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // common reveal options to create reveal animations
+      ScrollReveal({
+        // reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal(".main-title, .section-title", {
+        delay: 500,
+        origin: "left",
+      });
+      ScrollReveal().reveal(".section-01, .image, .info", {
+        delay: 600,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".text-box", { delay: 700, origin: "right" });
+      ScrollReveal().reveal(".media-icons i", {
+        delay: 500,
+        origin: "bottom",
+        interval: 200,
+      });
+      ScrollReveal().reveal(".section-02 .image, .section-03 .image", {
+        delay: 500,
+        origin: "top",
+      });
+      ScrollReveal().reveal(".media-info li", {
+        delay: 500,
+        origin: "left",
+        interval: 200,
+      });
+    </script>
+  </body>
+</html>
