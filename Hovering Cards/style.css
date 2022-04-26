@@ -108,9 +108,9 @@ p{
 .footer{
   position: absolute;
   top: 500px;
-  marging: 10px;
+  margin: 10px;
   width: 100%;
-   text-align: center;
+  text-align: center;
 }
 .footer h2{
   font-size:18px;
