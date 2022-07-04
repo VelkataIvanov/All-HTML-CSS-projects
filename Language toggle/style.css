@@ -44,12 +44,12 @@ body{
     position: absolute;
     width: 50px;
     height: 25px;
-    background: #333;
+    background: #17046e;
     border-radius: 25px;
 }
 
 .check:checked:before{
-    background: #00a1ff;
+    background: #0e8003;
 }
 
 .check::after{
@@ -61,13 +61,13 @@ body{
     background: #fff;
     border-radius: 25px;
     transition: 0.25s;
-    border: 2px solid #333;
+    border: 2px solid #17046e;
     box-sizing: border-box;
 }
 
 .check:checked:after{
     left: 25px;
-    border: 2px solid #00a1ff;
+    border: 2px solid #0e8003;
 }
 
 .check:checked ~ .content.contentEnglish{
