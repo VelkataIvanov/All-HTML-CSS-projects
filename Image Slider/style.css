@@ -14,8 +14,8 @@
 }
 
 .swiper{
-    width: 60%;
-    height: fit-content;
+    width: 600px;
+  height: 300px;
 }
 
 .swiper-wrapper img{
